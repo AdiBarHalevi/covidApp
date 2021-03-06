@@ -63,8 +63,8 @@ const webSiteObj = {
       let data;
       if (area === `world`) {
         data = await fetch(
-        // `https://cors-proxy.htmldriven.com/?url=https://restcountries.herokuapp.com/api/v1`,
-          `https://cors-anywhere.herokuapp.com/https://restcountries.herokuapp.com/api/v1`,
+        `https://cors-proxy.htmldriven.com/?url=https://restcountries.herokuapp.com/api/v1`,
+          // `https://cors-anywhere.herokuapp.com/https://restcountries.herokuapp.com/api/v1`,
           requestOptions
         );
         data = await data.json();
