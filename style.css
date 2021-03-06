@@ -9,9 +9,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-main{
     height: 100vh;
     background: rgb(2, 34, 73);
     opacity: 0.9;
@@ -42,7 +39,10 @@ svg{
     fill: orange;
     width: 25rem;
     height: 18.75rem;
-    animation: roll 15s ease infinite;
+}
+
+svg:hover{
+    animation: roll 4s ease infinite;
 }
 
 @keyframes roll {
@@ -57,6 +57,20 @@ svg{
 main h1{
     font-size: 9rem;
     line-height: 9rem;
+}
+
+.spinner{
+    display: none;
+}
+
+.spinner span{
+    font-size: 3rem;
+}
+
+.spinner svg{
+    height: 3rem;
+    width: 3rem;
+    animation: roll 10s ease infinite;
 }
 
 

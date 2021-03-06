@@ -39,17 +39,20 @@ const webSiteObj = {
       let selectedArea;
       const btn = $(`.submit-area`);
       btn.addEventListener(`click`, () => {
+        btn.disabled = true
+        $(`.spinner`).style.display = `block`
         selectedArea = $('input[name="chose"]:checked');
         $(`.page2`).style.display = `flex`;
         this.fetchAreaData(selectedArea.id).catch(errorhandler);
         setTimeout(()=>{
+          $(`.spinner`).style.display = `none`
+          btn.disabled = false
           window.scrollTo({
-            top: 1800,
+            top: 2500,
             behavior: 'smooth'
           });
           $(`.confirmed`).click()
-        },1000)
-
+        },1500)
       });
     },
     fetchAreaData: async function (area) {
