@@ -204,7 +204,9 @@ main h1{
 
 .countryList > li{
     margin: 14px;
+    cursor: pointer;
 }
+
 
 .lower-div{
     justify-content: center;
