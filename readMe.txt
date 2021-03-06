@@ -34,9 +34,27 @@ make any other action beside fetching.
 
 using the Covid app- we will need to take 
 the info by name 
-(data.name)
-()
 
+
+after a while into the project it decided to change my goals and focus on 1 feature 
+the user will chose a continent --> and then he can choose a country (as requested)
+i've added another API call with the flag of the country that is checked
+and another table displaying the corona state at the chosen country.
+
+- disabled the ability of the user to call the API during loading state.
+- added a scroll after loading ends, also added a spinner.
+
+bugs:
+1. after loading the page, and choosing a specific country if there is 
+another continent chosen the lower table is not updating well(didn't have time
+to update it properly-easy fix)
+2. after loading the primary table(page 2) it does not update unless you
+interact with the buttons - i do not know the reason, added a click by code
+that helps the table "refresh itself"
+3.i've done some media querry, didn't had the time to adjust it completly 
+it still has work to be done there.
+
+overal the task was good, didn't had specific issues and I really enjoy doing it.
 
 
 
