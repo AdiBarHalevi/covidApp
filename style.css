@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 100vh;
+    background: rgb(2, 34, 73);
+    opacity: 0.9;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    color: #F07C41;
+    height: 50rem;
+    width: 37.5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.select-continent .btn{
+    width: 9rem;
+    position: absolute;
+    height: 3rem;
+    opacity: 0;
+}
+
+.upper-header{
+    display: flex;
+}
+
+svg{
+    fill: orange;
+    width: 25rem;
+    height: 18.75rem;
+    animation: roll 15s ease infinite;
+}
+
+@keyframes roll {
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+
+
+
+main h1{
+    font-size: 9rem;
+    line-height: 9rem;
+}
+
+
+#asia:checked ~ .asia,
+#europe:checked ~.europe,
+#africa:checked ~.africa,
+#Americas:checked ~.america,
+#world:checked ~.world{
+    border-bottom:2px solid #E47911;
+    line-height: 1rem;
+    width: 3rem;
+    height: 2.5rem;
+    font-size: 22px;
+}
+
+#world,#Americas,#africa,#europe,#asia{
+    opacity: 0;
+    height: 3rem;
+    width: 3rem;
+    position:absolute;
+
+}
+
+.btns-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow{
+    opacity: 0;
+    animation:fade 2s alternate ease infinite;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+  }
+
+
+
+.submit-area{
+    background: orange;
+    height: 3rem;
+    width: 6rem;
+    font-size: 1.5rem;
+}
+
+
+.btns-container{
+    width: 500px;
+    justify-content: space-around;
+}
+
+.select-continent{
+    line-height: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-div > div{
+    position: relative;
+}
+
+
+.inner-form{
+    display: none;
+    width: 42rem;
+    text-align: center;
+    position: relative;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+}
+
+.page2{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(2, 34, 73);
+    opacity: 0.9;
+}
+
+.chart-container{
+    width: 75%;
+    margin-top: 2rem;
+}
+
+
+.bottom-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.bottom-btns> .top-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-btns> .upper-btns *,.bottom-btns> .lower-btns *{
+    width: 80px;
+    height: 40px;
+}
+
+.lower-p2 .display{
+    width: 10rem;
+    height: 2rem;
+}
+
+.lower-p2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-p2 button{
+    color: rgb(2, 34, 73);
+    background: orange;
+    opacity: 0.8;
+}
+
+.lower-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 420px;
+}
+
+.countryList{
+    display: grid;
+    grid-template-columns: repeat(10, 120px);
+    text-align: center;
+    line-height: 1rem;
+    list-style: none;
+    color: orange;
+}
+
+.countryList > li{
+    margin: 14px;
+}
+
+.lower-div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.page3{
+    display:none;
+    background: rgb(2, 34, 73);
+    opacity: 0.9;
+    height: 700px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pic{
+    width: 200px;
+    height: 200px;
+}
+
+#myChart2{
+    height: 20rem;
+    width: 49rem;
+}
+
+.p3-display{
+    font-size: 30px;
+}
+
+.numbers-table{
+    width: 400px;
+    line-height: 3rem;
+}
+
+.chart-container2{
+    width: 900px;
+    padding: 2rem;
+}
+
+.page3 .content{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 3rem;
+    color: orange;
+}
+
+.headline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+}
+
+@media (max-width: 600px){
+    .upper-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main h1{
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    svg{
+        width: 6rem;
+        height: 6rem;
+    }
+    .inner-form{
+        flex-direction: column;
+        height: 20rem;
+    }
+    .main-content{
+        justify-content: unset;
+        height: unset;
+    }
+
+    .chart-container{
+        width: 80%;
+    }
+    .lower-p2 .lower-div{
+        flex-direction: column;
+    }
+    .bottom-btns{
+        width: 20%;
+        justify-content: center;
+    }
+
+    .upper-btns, .lower-btns{
+        flex-direction:column;
+    }
+    .countryList{
+        grid-template-columns: repeat(3, 6rem);
+        line-height: unset;
+    }
+    .chart-container2{
+        width: 28rem;
+    }
+
+    .headline{
+        height:unset;
+    }
+    .pic{
+        width: 10rem;
+        height: 10rem;    
+    }
+    .p3-display{
+        font-size: 1.2rem;
+    }
+    .numbers-table{
+        width: 300px;
+    }
+    .page3 .content{
+        flex-direction: column-reverse;
+    }
+    .page3{
+        height: unset;
+    }
+}
